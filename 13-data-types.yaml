@@ -5,11 +5,11 @@
     DURATION: 120 ##This is number
     COURSE: "DevSecOps with AWS" ##String
     IS_LIVE: true ##Boolean
-    TOOLS:
+    TOOLS: ##List []
     - linux
     - shell
     - Ansible
-    CONCEPTS:
+    CONCEPTS: ##Map or dictionary or Object...refered like {}
       CI: Jenkins
       SCRIPTING: "shell, Ansible, Teraform, python"
   tasks:
