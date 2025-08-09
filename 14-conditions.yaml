@@ -3,7 +3,7 @@
   connection: local
   vars_prompt:
   - name: NUMBER
-    prompt: "Please enter a number"
+    prompt: Please enter a number
     private: false
   tasks:
   - name: Print if the number is lessthan or equal to 100
