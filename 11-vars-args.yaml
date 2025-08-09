@@ -1,4 +1,5 @@
 - name: Varibles from Command line ##Here we learning Hcommand line variables
+##ansible-playbook -i inventory.ini  11-vars-args.yaml -e COURSE=Ansible -e DURATION=2Hrs
   hosts: local
   connection: local
   tasks:
