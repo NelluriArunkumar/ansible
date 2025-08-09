@@ -1,16 +1,16 @@
 - name: Conditions in Ansible
   hosts: local
   connection: local
-  # vars_prompt:
-  # - name: NUMBER
-  #   prompt: Please enter a number
-  #   private: false
-  vars:
-    NUMBER: 33
+  vars_prompt:
+  - name: NUMBER
+    prompt: Please enter a number
+    private: false
+  # vars:
+  #   NUMBER: 33
   tasks:
   - name: Print if the number is lessthan or equal to 100
     ansible.builtin.debug:
-      msg: "Given number {{ NUMMBER }} is lessthan or equal to 100"
+      msg: "Given number {{ NUMBER }} is lessthan or equal to 100"
     when: NUMBER <= 100
   
   - name: Print if the number is greaterthan 100
