@@ -30,18 +30,18 @@
 
   - name: convert to uppercase
     vars:
-      name: "Sivakumar Reddy M"
+      name: "arun kumar"
     ansible.builtin.debug:
       msg: "Hello {{ name | upper }}"
 
   - name: convert to lowercase
     vars:
-      name: "Sivakumar Reddy M"
+      name: "ARUN KUMAR"
     ansible.builtin.debug:
       msg: "Hello {{ name | lower }}"
 
   - name: check IP address is valid or not
     vars:
-      ip: "192.168.1.1"
+      ip: "172.31.19.103"
     ansible.builtin.debug:
       msg: "{{ ip | ansible.utils.ipaddr }}"
