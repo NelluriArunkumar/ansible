@@ -13,7 +13,7 @@
       msg: "hello {{ persons | split(',') }} "
 
   - name: convert map into list
-     vars:
+    vars:
       course:
         name: ansible
         duration: 10HR
