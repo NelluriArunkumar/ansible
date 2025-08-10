@@ -1,0 +1,13 @@
+- name: Loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: print names
+    ansible.builtin.debian:
+      msg: "Hello {{ item }}"  ##Here item is an reserved keyword to refer the loops values
+    loop:
+    - Arun
+    - ramesh
+    - suresh
+    - sai
+    - ravi
